@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Overtredingen</title>
+  <link rel='stylesheet' href='css/bootstrap.min.css'>
+</head>
+<body>
+  <h1>Alle overtredingen</h1>
+  
+<br/><br/>
+<a href='/search'>Zoeken op straat of minimum snelheid</a>&nbsp;
+ <br/><br/>
+
+  <ul class='overtreding'>
+  <% for(var i=0; i < overtredingen.length; i++) {%>
+    <li class='overtreding'>
+      <span><b>Datum vaststelling  : </b><%= overtredingen[i].datum_vaststelling %></span><br />
+      <span><b>Straat : </b><%= overtredingen[i].opnameplaats_straat %></span><br />
+      <span><b>Aantal overtredingen snelheid : </b><%= overtredingen[i].aantal_overtredingen_snelheid %></span><br />
+      <span><b>Aantal overtredingen roodlicht : </b><%= overtredingen[i].aantal_overtredingen_roodlicht %></span><br />
+    </li>
+  <% } %>
+  </ul>
+<br />
+</body>
+</html>
