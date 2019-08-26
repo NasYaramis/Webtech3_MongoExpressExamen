@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Overtredingen</title>
+</head>
+<body>
+<h2>Resultaat</h2>
+<br/><br/>
+<ul>
+    <% for(var i=0; i < overtreding.length; i++) {%>
+        <li>
+            <span><b>Datum vaststelling  : </b><%= overtreding[i].datum_vaststelling %></span><br />
+            <span><b>Straat : </b><%= overtreding[i].opnameplaats_straat %></span><br />
+            <span><b>Aantal overtredingen snelheid : </b><%= overtreding[i].aantal_overtredingen_snelheid %></span><br />
+            <span><b>Aantal overtredingen roodlicht : </b><%= overtreding[i].aantal_overtredingen_roodlicht %></span><br />
+        </li>
+    <% } %>
+</ul>
+<br />
+
+</body>
+</html>

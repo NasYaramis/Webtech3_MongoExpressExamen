@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Overtredingen</title>
+</head>
+<body>
+
+<h2>Zoek overtreding a.h.v. straatnaam</h2>
+<br/>
+
+<form action='/searchByStreet' method='POST'>
+    <span><b>Straatnaam : </b><input type='text' name='opnameplaats_straat'></span>
+    <span><button type='submit'>Zoek Overtreding</button></span>
+</form>
+
+<br/><br/>
+<h2>Zoek overtreding a.h.v. minimum snelheid</h2>
+<br/>
+
+<form action='/searchBySpeed' method='POST'>
+    <span><b>Snelheid : </b><input type='text' name='aantal_overtredingen_snelheid'></span>
+    <span><button type='submit'>Zoek Overtreding</button></span>
+</form>
+</body>
+</html>
